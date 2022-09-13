@@ -1,0 +1,50 @@
+:root{
+    --primary-bg: rgba(131, 96, 195, 0.9);
+    --secondary-bg:rgba(46, 191, 145, 0.9);
+
+    --primary-form: rgba(131, 96, 195, 0.65);
+    --secondary-form:rgba(46, 191, 145, 0.65);
+}
+body{
+    background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg)),
+    url('./table_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.table-title{
+    text-align: center;
+    color:  rgb(0, 0, 0);
+    padding: 0.5rem 5rem 1rem 1rem;
+}
+table{
+    width: 1200px;
+    box-shadow: 20px 25px 35px rgba(0, 0, 0, 0.95);
+    position: absolute;
+    left: 10%;
+}
+table, th, td {
+    padding: 20px;
+    border: 4px ridge var(--primary-bg);
+    text-align: center;
+}
+th{
+	background-color: rgba(131, 96, 195, 0.8);
+	color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+td{
+	font-size: 18px;
+}
+tr:nth-child(odd){
+	background-color: rgba(46, 191, 145, 0.1);
+}
+tr:nth-child(even){
+	background-color: rgba(131, 96, 195, 0.1);
+}
+tr:hover{
+	background-color: rgba(131, 96, 195, 0.5);
+    color: white;
+}
